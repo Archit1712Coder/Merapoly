@@ -43,26 +43,26 @@ namespace Monopoly
         public void DisplayPropertyInfo(int propertyNum)
         {
             if (propertyNum == -1) {
-                string text = "<b>Reading Railroad</b>";
+                string text = "<b>Nike</b>";
                 Railroad readingRailroad = (Railroad)GameManager.instance.board.locations[5];
                 if (readingRailroad.owner == null) {
                     text = text + " - Owner: None";
                 } else text = text + " - Owner: " + readingRailroad.owner.NickName;
 
                 Railroad pennsylvaniaRailroad = (Railroad)GameManager.instance.board.locations[15];
-                text = text + "\n<b>Pennsylvania Railroad</b>";
+                text = text + "\n<b>Puma</b>";
                 if (pennsylvaniaRailroad.owner == null) {
                     text = text + " - Owner: None";
                 } else text = text + " - Owner: " + pennsylvaniaRailroad.owner.NickName;
 
                 Railroad bAndORailroad = (Railroad)GameManager.instance.board.locations[25];
-                text = text + "\n<b>B & O Railroad</b>";
+                text = text + "\n<b>Adidas</b>";
                 if (bAndORailroad.owner == null) {
                     text = text + " - Owner: None";
                 } else text = text + " - Owner: " + bAndORailroad.owner.NickName;
 
                 Railroad shortLine = (Railroad)GameManager.instance.board.locations[35];
-                text = text + "\n<b>Short Line</b>";
+                text = text + "\n<b>Nivia</b>";
                 if (shortLine.owner == null) {
                     text = text + " - Owner: None";
                 } else text = text + " - Owner: " + shortLine.owner.NickName;
@@ -72,13 +72,13 @@ namespace Monopoly
             }
 
             else if (propertyNum == -2) {
-                string text = "<b>Electric Company</b>\n";
+                string text = "<b>Old Trafford</b>\n";
                 Utility electricCompany = (Utility)GameManager.instance.board.locations[12];
                 if (electricCompany.owner == null) {
                     text = text + "Owner: None";
                 } else text = text + "Owner: " + electricCompany.owner.NickName;
 
-                text = text + "\n\n<b>Water Works</b>\n";
+                text = text + "\n\n<b>Camp Nou</b>\n";
                 Utility waterWorks = (Utility)GameManager.instance.board.locations[28];
                 if (waterWorks.owner == null) {
                     text = text + "Owner: None";
